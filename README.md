@@ -4,11 +4,11 @@ A quick example showing how to use the PasswordFill API in iOS 11 and Swift 4.
 
 ## Prerequisites
 * Xcode 9 (Beta)
-* "Associated Domains" capability added to your project's `.entitlements` file
+* "Associated Domains" capability added to your project's `.entitlements` file (when using own domains)
 ```xml
 <key>com.apple.developer.associated-domains</key>
 <array>
-  <string>webcredentials:your-domain.come</string>
+  <string>webcredentials:your-domain.com</string>
 </array>
 ```
 
