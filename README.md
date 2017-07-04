@@ -27,11 +27,17 @@ textField2.textContentType = .password
 textField2.placeholder = "Enter Password ..."
 textField2.isSecureTextEntry = true
 ```
-Then, add the views to your parent view:
+Then, create a file called `apple-app-site-association` with the following contents:
+```json
+{
+    "webcredentials" : {
+        "apps" : ["<team-id>.<bundle-id>"]
+    }
+}
 ```
-self.view.addSubview(textField)
-self.view.addSubview(textField2)
-```
+Finally, upload the file to your server and place it into the sub-directory `.well-known`, e.g.
+`http://hans-knoechel.de/.well-known/apple-app-site-association`.
+
 That's it! Run the app on your device and scan your NFC NDEF-Tag.
 
 ## Author
