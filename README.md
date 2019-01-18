@@ -3,7 +3,7 @@
 A quick example showing how to use the PasswordFill API in iOS 11 and Swift 4.
 
 ## Prerequisites
-* Xcode 9 (Beta)
+* Xcode 9+
 * "Associated Domains" capability added to your project's `.entitlements` file (when using own domains)
 ```xml
 <key>com.apple.developer.associated-domains</key>
@@ -35,10 +35,9 @@ Then, create a file called `apple-app-site-association` with the following conte
     }
 }
 ```
-Finally, upload the file to your server and place it into the sub-directory `.well-known`, e.g.
-`http://hans-knoechel.de/.well-known/apple-app-site-association`.
+Finally, upload the file to your server and place it into the sub-directory `.well-known`.
 
-That's it! Run the app on your device and scan your NFC NDEF-Tag.
+That's it!
 
 ## Author
 Hans Knöchel ([@hansemannnn](https://twitter.com/hansemannnn))
